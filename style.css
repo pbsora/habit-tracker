@@ -38,24 +38,26 @@ body {
 }
 
 .habit-one:hover {
-  background-color: red;
-  transition: 400ms;
+  background-color: rgb(85, 185, 228);
+  transition: 400ms ease-in-out;
 }
 
 .habit-two:hover {
-  background-color: blue;
-  transition: 400ms;
+  background-color: rgb(236, 46, 46);
+  transition: 400ms ease-in-out;
 }
 
 .habit-three:hover {
-  background-color: green;
-  transition: 400ms;
+  background-color: rgb(217, 169, 36);
+  transition: 400ms ease-in-out;
 }
 
 .day-of-the-month {
   background-color: rgb(176, 34, 34);
   font-size: 1.3rem;
   color: white;
+  font-family: "REM", sans-serif;
+  user-select: none;
 }
 
 .day-of-the-month p {
