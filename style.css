@@ -32,9 +32,29 @@ body {
   outline: black 1px solid;
   background-color: white;
   border-radius: 10px;
-  display: grid;
-  grid-template-rows: repeat (4, 1fr);
+  display: flex;
+  flex-direction: column;
   overflow: hidden;
+}
+
+img {
+  height: 2rem;
+  user-select: none;
+}
+
+.habit-one,
+.habit-two,
+.habit-three,
+.day-of-the-month {
+  height: 3rem;
+}
+
+.habit-one,
+.habit-two,
+.habit-three {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .habit-one:hover {
@@ -63,4 +83,17 @@ body {
 .day-of-the-month p {
   margin-top: 10px;
   margin-left: 20px;
+}
+
+.habit-one-activate {
+  background-color: rgb(85, 185, 228);
+  transition: 400ms ease-in-out;
+}
+.habit-two-activate {
+  background-color: rgb(236, 46, 46);
+  transition: 400ms ease-in-out;
+}
+.habit-three-activate {
+  background-color: rgb(217, 169, 36);
+  transition: 400ms ease-in-out;
 }
