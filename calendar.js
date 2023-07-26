@@ -10,17 +10,14 @@ export default function createDays(nOfDays) {
 
     //Trigger change in habit status
     day.addEventListener("click", (e) => {
-      if (e.target.matches("div")) {
-        const habit = e.target.classList.value;
-        const index = e.target.parentElement.classList.value.slice(3);
-        changeStatus(index - 1, habit);
-        /* e.target.classList.add(habit + "-activate"); */
-      } else if (e.target.matches("img")) {
-        const habit = e.target.parentElement.classList.value;
-        const index =
-          e.target.parentElement.parentElement.classList.value.slice(3);
-        changeStatus(index - 1, habit);
-        /*  e.target.parentElement.classList.add(habit + "-activate"); */
+      const habit = e.target.classList.value;
+      const index = e.target.parentElement.classList.value.slice(3);
+      changeStatus(index - 1, e.target.classList.item(0));
+
+      if (habit.includes("-activate")) {
+        e.target.classList.remove(e.target.classList.item(1));
+      } else {
+        e.target.classList.add(habit + "-activate");
       }
     });
 

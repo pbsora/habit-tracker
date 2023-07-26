@@ -55,7 +55,6 @@ export function changeStatus(index, habit) {
   }
 
   updtStorage();
-  console.log(days[index]);
 }
 
 export function getHabitStatus(index) {
