@@ -13,7 +13,7 @@ body {
 }
 
 #calendar {
-  background-color: black;
+  background-color: rgb(10, 9, 9, 0.6);
   border-radius: 20px;
 }
 
@@ -31,7 +31,7 @@ body {
 }
 
 .day {
-  outline: black 1px solid;
+  border: black 2px solid;
   background-color: white;
   border-radius: 10px;
   display: flex;
