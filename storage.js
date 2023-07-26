@@ -44,14 +44,13 @@ itemExists == false ? (days = makeDays(31)) : console.log("");
 export function changeStatus(index, habit) {
   switch (habit) {
     case "habit-one":
-      days[index].habitOne = days[index].habitOne ? false : true;
+      days[index].habitOne = !days[index].habitOne;
       break;
     case "habit-two":
-      days[index].habitTwo = days[index].habitTwo ? false : true;
+      days[index].habitTwo = !days[index].habitTwo;
       break;
     case "habit-three":
-      days[index].habitThree = days[index].habitThree ? false : true;
-      break;
+      days[index].habitThree = !days[index].habitThree;
   }
 
   updtStorage();
