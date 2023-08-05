@@ -1,4 +1,5 @@
 import { changeStatus, getHabitStatus } from "./storage.js";
+import { convertedDays } from "./main.js";
 
 const content = document.getElementById("content");
 
@@ -24,7 +25,7 @@ export default function createDays(nOfDays) {
     const dayOfTheMonth = document.createElement("div");
     dayOfTheMonth.setAttribute("class", "day-of-the-month");
     const p = document.createElement("p");
-    p.innerText = i;
+    p.innerText = convertedDays[i - 1];
     dayOfTheMonth.appendChild(p);
     day.appendChild(dayOfTheMonth);
 
